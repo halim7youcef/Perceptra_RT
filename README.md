@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 446d3dbc2bdcb7cacab1a3f6764ad87b5cce2986
 <div align="center">
 
 # Perceptra_RT
@@ -368,3 +372,19 @@ The node subscribes to a raw camera feed, runs the full pipeline, and publishes 
 ## License
 
 MIT License — see `LICENSE` for details.
+<<<<<<< HEAD
+=======
+================================
+
+# Perceptra_RT
+
+Real-time AV perception, object detection, multi-object tracking, monocular depth, sensor fusion and semantic segmentation on urban driving scenes.
+
+>>>>>>> 21b388e7bb3d36ae9558a1e97d4a0f91708838c4
+>>>>>>>
+>>>>>>
+>>>>>
+>>>>
+>>>
+>>
+>>>>>>> 446d3dbc2bdcb7cacab1a3f6764ad87b5cce2986
