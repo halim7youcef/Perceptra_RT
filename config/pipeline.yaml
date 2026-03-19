@@ -1,0 +1,47 @@
+model:
+  yolo:
+    weights: yolov8n.pt
+    conf: 0.25
+    input_size: [640, 320]
+    av_classes:
+      - car
+      - truck
+      - bus
+      - motorcycle
+      - bicycle
+      - person
+      - traffic light
+      - stop sign
+
+  depth:
+    model: MiDaS_small
+    scale: 0.05
+    fx: 571.0
+    fy: 571.0
+    cx: 320.0
+    cy: 160.0
+
+  segmentation:
+    model: nvidia/segformer-b0-finetuned-cityscapes-512-1024
+    num_classes: 19
+    blend_alpha: 0.45
+
+tracker:
+  max_age: 10
+  n_init: 2
+  max_cosine_distance: 0.4
+  nn_budget: 100
+
+bev:
+  size: 320
+  max_depth: 12.75
+  max_lateral: 5.0
+  rings: [3.0, 6.0, 9.0]
+
+mlflow:
+  experiment: av_pipeline_v3
+  tracking_dir: ./mlruns
+
+proximity:
+  close_threshold_m: 3.0
+  mid_threshold_m: 7.0
